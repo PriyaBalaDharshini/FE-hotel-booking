@@ -1,0 +1,135 @@
+.header {
+    background-color: rgb(19, 154, 138);
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.headerDesc {
+    margin: 30px 0;
+}
+
+.headerBtn {
+    margin-left: 10px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(23, 200, 179);
+}
+
+.headerSearch {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.headerIcon {
+    color: rgb(104, 103, 103);
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+}
+
+.headerSearchText {
+    color: rgb(104, 103, 103);
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 55px;
+    z-index: 2
+}
+
+.options {
+    position: absolute;
+    top: 55px;
+    background-color: white;
+    background-color: rgb(195, 248, 241);
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -5px rgb(73, 196, 180);
+    z-index: 2
+}
+
+.optionItem {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 200px;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(23, 200, 179);
+    background-color: white;
+    cursor: pointer;
+}
+
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+}
